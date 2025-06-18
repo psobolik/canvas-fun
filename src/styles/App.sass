@@ -1,0 +1,51 @@
+@use "Theme"
+
+:root
+  font-family: sans-serif
+  color: Theme.$light-primary
+  background-color: Theme.$light-background
+
+  @media (prefers-color-scheme: dark)
+    color: Theme.$dark-primary
+    background-color: Theme.$dark-background
+
+body
+  text-align: center
+
+canvas#canvas
+  margin-top: 1em
+
+header
+  font-size: 2em
+  text-shadow: Theme.$light-highlight 2px 3px
+
+  @media (prefers-color-scheme: dark)
+    text-shadow: 0 0
+
+footer
+  font-size: 0.75em
+  width: 800px
+  margin: auto
+
+  & a
+    color: aliceblue
+
+    & :visited
+      color: lightblue
+
+button
+  background-color: transparent
+  margin: 0 0.5em
+  border: 1px solid Theme.$light-highlight
+  color: Theme.$light-primary
+
+  @media (prefers-color-scheme: dark)
+    border-color: Theme.$dark-highlight
+    color: Theme.$dark-primary
+
+  &:hover
+    cursor: pointer
+    background-color: Theme.$light-highlight
+
+    @media (prefers-color-scheme: dark)
+      background-color: Theme.$dark-highlight
