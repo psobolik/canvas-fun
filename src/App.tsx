@@ -5,7 +5,7 @@ function App() {
     return (<>
         <header>Canvas Fun!</header>
         <Canvas/>
-        <footer id="footer"><a href={"https://github.com/psobolik/more-canvas-fun.git"}>source</a>
+        <footer id="footer"><a href={"https://github.com/psobolik/canvas-fun.git"}>source</a>
         </footer>
         <script type="module" src="/src/main.ts"></script>
     </>)
